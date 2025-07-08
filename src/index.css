@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin "daisyui";
+ @source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@font-face {
+  font-family: 'Negaar';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('./fonts/Negaar-Regular.ttf') format('truetype');
+}
+@theme {
+  --font-sans: 'iranSans', sans-serif;
+}
+@font-face {
+  font-family: 'iranSans';
+  font-style: normal;
+  font-display: swap;
+  src: url('./fonts/IRANSansWeb.woff') format('woff');
+}
+.neg{
+  font-family: 'Negaar' !important; 
+}
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width:thin;
+  scrollbar-color: var(--scroll-secondary) var(--scroll-primary);
+  direction: rtl;
+}
+
